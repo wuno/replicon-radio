@@ -1,0 +1,243 @@
+html, body {
+  background-color: #000000 !important;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* ************** Navigation Section ************** */
+
+#sidebarl {
+    padding: 30px 0 10px 0;
+    float: left;
+}
+
+#sidebarr {
+    padding: 30px 0 1px 0;
+    float: right;
+}
+
+/* ************** Navigation Section ************** */
+
+nav {
+    position: fixed;
+}
+
+.App-logo {
+    height: 280px;
+}
+/*.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
+
+.navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+    text-decoration: underline !important;
+}
+
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+.navbar-inverse .navbar-nav .active>.nav-link, .navbar-inverse .navbar-nav .nav-link.active {
+    color: #ffc107 !important;
+    text-decoration: underline !important;
+}
+
+span.fa.fa-twitter {
+    font-size: 30px !important;
+}
+
+span.fa.fa-facebook-official {
+    font-size: 30px !important;
+}
+
+span.fa.fa-instagram {
+    font-size: 30px !important;
+}
+
+span.fa.fa-youtube {
+    font-size: 30px !important;
+}
+
+span.fa.fa-google-plus {
+    font-size: 30px !important;
+}
+
+/* ************** Nav Break Section ************** */
+
+.crumb {
+  background-image: url('images/sound-wave.png');
+  background-repeat: repeat-x;
+  height: 50px;
+}
+
+
+/* ************** Footer Section ************** */
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .container p.text-muted {
+    text-align: center;
+}
+
+.wuno-color {
+    color: #e9593d;
+}
+
+.footer .container p.wuno-color {
+    text-align: center;
+}
+
+.footer .container a.wuno-color:hover {
+    color: #e9593d;
+}
+
+/* ************** Twitter Feed Styles ************** */
+
+div#twitter-wjs {
+    height: 407px;
+    overflow: scroll;
+}
+
+/* ************** Image Slider Styles ************** */
+
+.slick-slider {
+       width: 90% !important;
+    /* margin: 0 auto !important; */
+    float: left;
+    margin: auto;
+    margin-left: 51px;
+}
+
+/* ************** Customer Styles ************** */
+
+.container a {
+    color: #e9593d;
+}
+
+.container a:hover {
+    color: #e9593d;
+    text-decoration: underline !important;
+}
+
+.container a:visited {
+    color: #e9593d;
+    text-decoration: underline !important;
+}
+
+.container-fluid {
+    padding: 0px !important;
+}
+
+.container {
+    padding: 50px 10px 50px 10px;
+}
+
+.box {
+    padding: 30px
+}
+
+button#cmd-play {
+    color: #ffc107;
+    width: 100%;
+    padding: 10px;
+}
+
+button#cmd-play:hover {
+    color: #ffffff;
+    background: #ffc107;
+}
+
+button#cmd-play:focus {
+    outline: none;
+    color: #ffffff;
+    background: #ffc107;
+    border: none !important;
+}
+
+button#cmd-pause {
+    color: #ffc107;
+    width: 100%;
+    padding: 10px;
+}
+
+button#cmd-pause:hover {
+    color: #ffffff;
+    background: #ffc107;
+}
+
+button#cmd-pause:focus {
+    outline: none;
+    color: #ffffff;
+    background: #ffc107;
+    border: none !important;
+}
+
+.rep-footer {
+    color: #ffc107;
+    text-align: center;
+}
+
+
+.music-area{
+	margin-top:30px;
+	float:left;
+	}
+.shift{
+	float:left;
+	}
+	
+.mtop20{
+	margin-top:20px;
+	}
+	
+.slickitup{
+	}
+.slickitup img{
+	width:100%;
+	}
+.pl-r{
+	padding:0px 10px;
+	}
+	
+@media(max-width:480px){
+	.App-logo {
+    height: 170px;
+    margin: auto;
+    text-align: center;
+    /* float: left; */
+    display: block;
+}
+.slickitup img {
+    width: 100%;
+}
+.nav-item{
+	width:100px;
+	}
+.ml-auto {
+    margin-left: 0!important;
+    flex-direction: row;
+}
+
+.slick-slider {
+        width: 84% !important;
+    /* margin: 0 auto !important; */
+    float: left;
+    margin: auto;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+	
+	}
+	
