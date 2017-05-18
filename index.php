@@ -14,6 +14,7 @@
     
     <link rel="stylesheet" href="custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="bootstrap-4/css/bootstrap.css" type="text/css" media="all">
     <script src="jquery-3.2.1.min.js"></script>
     <script src="tether-1.3.3/dist/js/tether.min.js"></script>
     <script src="bootstrap-4/js/bootstrap.min.js"></script>
@@ -25,6 +26,23 @@
 	    enable_page_level_ads: true
 	  });
 	</script>
+    <style>
+	@media(max-width:480px){
+	
+.ml-auto {
+    margin-left: 0!important;
+    flex-direction: row;
+}
+	
+	}
+    .ml-auto {
+    margin-left: 0!important;
+}
+
+.left-m{
+	    padding: 10px 20px;
+		}
+    </style>
 
 	<title>Replicon Radio</title>
 </head>
@@ -40,7 +58,7 @@
           </button>
           <a class="navbar-brand" href="https://wuno.com"><img src="images/green-dino.png" class="App-logo" alt="logo" /></a>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav mx-auto"><img src="images/banner.jpg" alt="Replicon Radio Banner" /></div>
+          <div class="navbar-nav mx-auto"><img class="img-responsive" src="images/banner.png" alt="Replicon Radio Banner" /></div>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                   <a href="https://twitter.com/replicon_radio" target="_blank" class="nav-link"><span class="fa fa-twitter"></span></a>
@@ -65,60 +83,55 @@
 <div class="crumb"></div>
 
 <!--  Right Sidebar -->
-		<div class="col-lg-2 col-md-12 col-sm-12 sidebar-offcanvas ml-auto" id="sidebarr">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-			
-          </div>
-        </div>
+		
 
 <!-- Main Content Area -->
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-8 col-sm-12">
-				<a id="my-widget" class="spreaker-player" href="https://www.spreaker.com/show/1443546" data-resource="show_id=1443546" data-width="100%" data-height="300px"></a>
+	<div class=" container-fluid">
+		
+          
+          <div class="col-md-2 col-xs-12 sidebar-offcanvas mr-auto" id="sidebarl">
+          <div class="list-group">
+            <a href="#" class="list-group-item left-m"><img src="images/ad1.jpg" alt="ad 1" /></a>
+          </div>
+        </div>
+          
+          
+        
+        
+        
+			<div class="col-md-4 col-xs-12 music-area" >
+				<a id="my-widget" class="spreaker-player" href="https://www.spreaker.com/show/1443546" data-resource="show_id=1443546" data-width="100%" data-height="305px"></a>
 				<script async src="https://widget.spreaker.com/widgets.js"></script>
 				<button id="cmd-play" class="button secondary large "><span class="fa fa-play"></span></button>
 				<button id="cmd-pause" class="button secondary large"><span class="fa fa-pause"></span></button>
 			</div>
-			<div class="col-lg-6 col-md-4 col-sm-12">
+            
+            <div class=" col-md-4 col-sm-12 music-area" >
 				<div id="twitter-wjs">
 					<a class="twitter-timeline" href="https://twitter.com/replicon_radio">Replicon Radio</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 			</div>
-		</div>
+            
+            
+            <div class=" col-md-2 col-xs-12 sidebar-offcanvas ml-auto" id="sidebarr">
+          <div class="list-group">
+            <a href="#" class="list-group-item right-m"><img src="images/ad1.jpg" alt="ad 1" /></a>
+          </div>
+        </div>
+            
+            
+		
+		
 	</div>
 
 <!-- Left Sidebar -->
- 		<div class="col-lg-2 col-md-12 col-sm-12 sidebar-offcanvas mr-auto" id="sidebarl">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-          </div>
-        </div>
+ 		
 
 <!-- Instafeed Image Feed -->	
-	<div  class="slickitup" id="instafeed"></div>
+	<div  class=" slickitup shift mtop20 " id="instafeed"></div>
 
 <!-- Footer Area -->
-	<footer class="footer">
+	<footer class="footer shift">
         <div class="container">
             <p class="rep-footer">RepliconRadio.com &copy; 2016 - <?php echo date("Y"); ?></p>
             <p class="wuno-color"><a class="wuno-color" href="https://wuno.com">wunO.com - Creative Designs From Creative Minds</a></p>
@@ -163,8 +176,8 @@ var feed = new Instafeed({
   	after: function () {
        $('.slickitup').slick({
             infinite: true,
-  			slidesToShow: 8,
-  			slidesToScroll: 8,
+  			slidesToShow: 9,
+  			slidesToScroll: 9,
   			 responsive: [
 		{
 		  breakpoint: 1324,

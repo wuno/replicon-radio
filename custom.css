@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url('images/bg.png');
 }
 
 /* ************** Navigation Section ************** */
@@ -211,6 +212,16 @@ button#cmd-pause:focus {
 	padding:0px 10px;
 	}
 	
+.list-group-item.left-m {
+    background: #000;
+}
+
+.list-group-item.right-m {
+    background: #000;
+}
+
+/* ************** Media Queries ************** */
+
 @media(max-width:480px){
 	.App-logo {
     height: 170px;
@@ -231,13 +242,11 @@ button#cmd-pause:focus {
 }
 
 .slick-slider {
-        width: 84% !important;
+    width: 84% !important;
     /* margin: 0 auto !important; */
     float: left;
     margin: auto;
     margin-left: 30px;
     padding-top: 10px;
+}	
 }
-	
-	}
-	
