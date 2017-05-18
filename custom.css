@@ -24,6 +24,8 @@ nav {
     position: fixed;
 }
 
+img{ max-width: 100% !important; max-height: 100% !important;}
+
 .App-logo {
     height: 280px;
 }
