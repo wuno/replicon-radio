@@ -208,6 +208,19 @@ button#cmd-pause:focus {
 .slickitup{
 	}
 
+@media(min-width:768px){
+.slickitup img{
+	width:20%;
+	}
+}
+
+@media(max-width:767px){
+.slickitup img{
+	width:50%;
+	}
+}
+
+
 .pl-r{
 	padding:0px 10px;
 	}
@@ -221,16 +234,13 @@ button#cmd-pause:focus {
 }
 
 /* ************** Media Queries ************** */
-@media (min-width:768px){
-	.slickitup img {
-    width: 100%;}
-}
 
 @media(max-width:767px){
 	.App-logo {
     height: 100px;
     margin: auto;
     text-align: center;
+float: left;
     display: block;
 }
 .slickitup img {
